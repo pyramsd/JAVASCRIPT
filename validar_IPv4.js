@@ -3,7 +3,7 @@ function valid_ip(ip){
         ip = ip.split(".");
         let valid_nums = 0;
         for (let i of ip){
-         if (i.toString() >= 0 && i.toString() <= 255){
+         if (i >= 0 && i <= 255){
             valid_nums += 1;
          }
         }
@@ -18,4 +18,4 @@ function valid_ip(ip){
     }
 }
 
-valid_ip("122.16.1.0");
+valid_ip("255.255.255.255");
